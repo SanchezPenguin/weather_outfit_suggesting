@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Information</title>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color:#85cae0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 50px;
+            color: #333;
+        }
+        .weather-info {
+            margin-top: 40px;
+        }
+        .weather-info p {
+            font-size: 25px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather in El Paso</h1>
+    <div class="weather-info">
+        <p>Temperature: {{temp}}°C</p>
+        <p>Feels like: {{feels_like}}°C</p>
+        <p>Min Temperature: {{temp_min}}°C</p>
+        <p>Max Temperature: {{temp_max}}°C</p>
+        <p>Humidity: {{humidity}}%</p>
+        <p>Humidity Level: {{humidity_level}}</p>
+        <p>Weather: {{weather_condition}}</p>
+        <p>Current Time: {{current_time}}</p>
+    </div>
+     
+    <a href="/outfit" class="btn">Get Outfit Suggestion</a>
+</body>
+</html>
+
